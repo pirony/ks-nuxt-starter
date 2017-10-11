@@ -1,9 +1,10 @@
+var webpack = require('webpack')
 module.exports = {
   /*
   ** Headers of the page
   */
   head: {
-    title: '{{ name }}',
+    title: 'Nuxt generate issue repro',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,6 +18,16 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  vendors: ['velocity-animate', 'hammerjs', 'ks-vue-fullpage'],
+  plugins: [
+    { src:'~plugins/ksvuefp'}
+  ],
+  /*
+  ** Global CSS
+  */
+  css: [
+    { src: 'ks-vue-fullpage/dist/ks-vue-fullpage.min.css' }
+  ],
   /*
   ** Build configuration
   */
@@ -33,6 +44,14 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    plugins: [
+      // set shortcuts as global for bootstrap
+      new webpack.ProvidePlugin({
+        Vel: 'velocity-animate',
+        Velocity: 'velocity-animate',
+        Hammer: 'hammerjs'
+      })
+    ],
   }
 }

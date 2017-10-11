@@ -1,8 +1,8 @@
 {
-  "name": "{{ name }}",
+  "name": "nuxt-gen-issue-repro",
   "version": "1.0.0",
-  "description": "{{ description }}",
-  "author": "{{ author }}",
+  "description": "",
+  "author": "Romain Pouchol",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -13,7 +13,10 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0-rc11"
+    "hammerjs": "^2.0.8",
+    "ks-vue-fullpage": "^1.2.0",
+    "nuxt": "^1.0.0-rc11",
+    "velocity-animate": "^1.5.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
