@@ -1,6 +1,6 @@
-# {{ name }}
+# mata2018
 
-> {{ description }}
+> Nuxt.js project
 
 ## Build Setup
 

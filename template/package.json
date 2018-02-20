@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-gen-issue-repro",
+  "name": "mata2018",
   "version": "1.0.0",
-  "description": "",
-  "author": "Romain Pouchol",
+  "description": "Nuxt.js project",
+  "author": "pirony <romainpouchol@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -13,20 +13,22 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "hammerjs": "^2.0.8",
-    "ks-vue-fullpage": "^1.2.0",
-    "nuxt": "^1.0.0-rc11",
-    "velocity-animate": "^1.5.0"
+    "animejs": "^2.2.0",
+    "axios": "^0.18.0",
+    "js-cookie": "^2.2.0",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.5",
+    "nuxt": "^1.0.0",
+    "vue-social-sharing": "^2.3.3",
+    "vuetify": "^1.0.1"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.3.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6"
   }
 }

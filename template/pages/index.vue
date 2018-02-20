@@ -1,31 +1,22 @@
 <template>
-  <div>
-    <ksvuefp :sections="sections" :options="options">
-      <ksvuefp-section v-for="(s,index) in sections" :backgroundColor="s" :key="s" :sectionIndex="index">
-        <h2>{{ s }}</h2>
-      </ksvuefp-section>
-    </ksvuefp>
-  </div>
+  <v-container fill-height>
+      <v-jumbotron color="primary">
+        <v-layout justify-center align-center>
+          <v-flex class="text-xs-center">
+            <h1 class="display-3 fater-text white--text">LET'S START</h1>
+            <v-icon color="accent" size="150px" class="mt-3">fa-asl-interpreting</v-icon>
+          </v-flex>
+        </v-layout>
+      </v-jumbotron>
+  </v-container>
 </template>
 
 <script>
 export default {
   data () {
-    return {
-      sections: ['blue', 'green', 'red', 'purple'],
-      options: {
-        duration: 600
-      }
-    }
+    return {}
   },
   mounted () {
-    console.log(this.sections)
   }
 }
 </script>
-
-<style>
-  h2 {
-    color: white;
-  }
-</style>
